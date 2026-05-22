@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligent College FAQ Chatbot - Smart Campus Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <i class="fas fa-robot"></i>
+            <span>SmartFAQ<span class="accent">Bot</span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#chatbot-section">Chatbot</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="admin/admin.html" class="admin-link"><i class="fas fa-lock"></i> Admin</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+                <i class="fas fa-moon" id="themeIcon"></i>
+            </button>
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero" id="home">
+    <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="hero-badge animate-fade-up">
+                <i class="fas fa-graduation-cap"></i> BCA Minor Project 2024
+            </div>
+            <h1 class="hero-title animate-fade-up delay-1">
+                Intelligent College<br>
+                <span class="gradient-text">FAQ Chatbot</span>
+            </h1>
+            <p class="hero-desc animate-fade-up delay-2">
+                Get instant answers to your college queries, local area information, and campus services — powered by intelligent AI responses available 24/7.
+            </p>
+            <div class="hero-btns animate-fade-up delay-3">
+                <a href="#chatbot-section" class="btn btn-primary">
+                    <i class="fas fa-comments"></i> Start Chatting
+                </a>
+                <a href="#about" class="btn btn-outline">
+                    <i class="fas fa-info-circle"></i> Learn More
+                </a>
+            </div>
+            <div class="hero-stats animate-fade-up delay-4">
+                <div class="stat"><span>500+</span><p>FAQs Covered</p></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span>24/7</span><p>Available</p></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span>98%</span><p>Accuracy</p></div>
+            </div>
+        </div>
+        <div class="hero-visual animate-fade-right delay-2">
+            <div class="chat-preview-card">
+                <div class="chat-header-preview">
+                    <div class="bot-avatar-sm"><i class="fas fa-robot"></i></div>
+                    <div>
+                        <p class="bot-name-sm">SmartFAQBot</p>
+                        <p class="bot-status"><span class="online-dot"></span> Online</p>
+                    </div>
+                </div>
+                <div class="chat-msgs-preview">
+                    <div class="preview-msg bot">👋 Hello! I'm your campus assistant. How can I help you today?</div>
+                    <div class="preview-msg user">What are the admission requirements?</div>
+                    <div class="preview-msg bot">📚 For BCA admission, you need 10+2 with minimum 50% marks in any stream. The entrance exam is held in June every year...</div>
+                    <div class="typing-preview">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== ABOUT SECTION ===== -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">About Project</span>
+            <h2>What is SmartFAQBot?</h2>
+            <p>An intelligent chatbot system designed to assist students and visitors with college-related and local area queries.</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-card animate-on-scroll">
+                <div class="about-icon"><i class="fas fa-bullseye"></i></div>
+                <h3>Objective</h3>
+                <p>To develop an intelligent web-based chatbot system that provides quick and accurate answers to college and local area-related queries, reducing manual effort and improving user experience.</p>
+            </div>
+            <div class="about-card animate-on-scroll">
+                <div class="about-icon"><i class="fas fa-cogs"></i></div>
+                <h3>Technology Used</h3>
+                <p>Built using HTML5, CSS3, JavaScript for frontend; Python Flask for backend; MySQL for database; and NLP-based logic for intelligent response matching.</p>
+            </div>
+            <div class="about-card animate-on-scroll">
+                <div class="about-icon"><i class="fas fa-users"></i></div>
+                <h3>Target Users</h3>
+                <p>Students, parents, new admissions, faculty, and local visitors who need quick information about the college campus and surrounding local area services.</p>
+            </div>
+            <div class="about-card animate-on-scroll">
+                <div class="about-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Key Benefits</h3>
+                <p>24/7 availability, instant responses, no waiting time, reduced burden on administration staff, and consistent accurate information delivery.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FEATURES SECTION ===== -->
+<section class="features" id="features">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Features</span>
+            <h2>What Can SmartFAQBot Do?</h2>
+            <p>Packed with intelligent features to make your campus experience smoother.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-item animate-on-scroll">
+                <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                <h4>AI-Powered Responses</h4>
+                <p>NLP-based keyword matching for intelligent, contextual answers to your queries.</p>
+            </div>
+            <div class="feature-item animate-on-scroll">
+                <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                <h4>Instant FAQ Buttons</h4>
+                <p>Quick access buttons for the most commonly asked questions — one click answers.</p>
+            </div>
+            <div class="feature-item animate-on-scroll">
+                <div class="feature-icon"><i class="fas fa-history"></i></div>
+                <h4>Chat History</h4>
+                <p>Timestamped conversation history so you never lose important information.</p>
+            </div>
+            <div class="feature-item animate-on-scroll">
+                <div class="feature-icon"><i class="fas fa-moon"></i></div>
+                <h4>Dark / Light Mode</h4>
+                <p>Comfortable reading experience in any lighting with one-click theme toggle.</p>
+            </div>
+            <div class="feature-item animate-on-scroll">
+                <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+                <h4>Fully Responsive</h4>
+                <p>Works perfectly on desktop, tablet, and mobile — anywhere, anytime.</p>
+            </div>
+            <div class="feature-item animate-on-scroll">
+                <div class="feature-icon"><i class="fas fa-user-shield"></i></div>
+                <h4>Admin Panel</h4>
+                <p>Secure admin dashboard to add, update, and manage FAQ answers easily.</p>
+            </div>
+            <div class="feature-item animate-on-scroll">
+                <div class="feature-icon"><i class="fas fa-download"></i></div>
+                <h4>Chat Export</h4>
+                <p>Download your chat conversation as a text file for future reference.</p>
+            </div>
+            <div class="feature-item animate-on-scroll">
+                <div class="feature-icon"><i class="fas fa-star"></i></div>
+                <h4>Feedback System</h4>
+                <p>Rate chatbot responses to help improve answer accuracy over time.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SERVICES SECTION ===== -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">FAQ Categories</span>
+            <h2>Topics I Can Help With</h2>
+            <p>Comprehensive knowledge base covering all college and local area topics.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card animate-on-scroll">
+                <div class="service-icon college"><i class="fas fa-graduation-cap"></i></div>
+                <h3>Admissions</h3>
+                <ul>
+                    <li>Eligibility criteria</li>
+                    <li>Application process</li>
+                    <li>Important dates</li>
+                    <li>Documents required</li>
+                </ul>
+            </div>
+            <div class="service-card animate-on-scroll">
+                <div class="service-icon courses"><i class="fas fa-book-open"></i></div>
+                <h3>Courses &amp; Fees</h3>
+                <ul>
+                    <li>Available programs</li>
+                    <li>Fee structure</li>
+                    <li>Scholarships</li>
+                    <li>Exam schedule</li>
+                </ul>
+            </div>
+            <div class="service-card animate-on-scroll">
+                <div class="service-icon campus"><i class="fas fa-building"></i></div>
+                <h3>Campus Facilities</h3>
+                <ul>
+                    <li>Library hours</li>
+                    <li>Hostel details</li>
+                    <li>Labs &amp; equipment</li>
+                    <li>Sports facilities</li>
+                </ul>
+            </div>
+            <div class="service-card animate-on-scroll">
+                <div class="service-icon placement"><i class="fas fa-briefcase"></i></div>
+                <h3>Placement</h3>
+                <ul>
+                    <li>Placement records</li>
+                    <li>Top recruiters</li>
+                    <li>Internships</li>
+                    <li>Career guidance</li>
+                </ul>
+            </div>
+            <div class="service-card animate-on-scroll">
+                <div class="service-icon local"><i class="fas fa-map-marker-alt"></i></div>
+                <h3>Local Services</h3>
+                <ul>
+                    <li>Nearby hospitals</li>
+                    <li>Bus stations</li>
+                    <li>ATMs &amp; banks</li>
+                    <li>Markets &amp; food</li>
+                </ul>
+            </div>
+            <div class="service-card animate-on-scroll">
+                <div class="service-icon faculty"><i class="fas fa-chalkboard-teacher"></i></div>
+                <h3>Faculty Info</h3>
+                <ul>
+                    <li>Department heads</li>
+                    <li>Contact details</li>
+                    <li>Office hours</li>
+                    <li>Timetable info</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CHATBOT SECTION ===== -->
+<section class="chatbot-section" id="chatbot-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Live Demo</span>
+            <h2>Try the Chatbot</h2>
+            <p>Ask any question about college admissions, courses, campus facilities, or local services.</p>
+        </div>
+        <div class="chatbot-demo-wrapper">
+            <div class="faq-quick-buttons">
+                <p><i class="fas fa-lightbulb"></i> Quick Questions:</p>
+                <div class="faq-btn-grid">
+                    <button class="faq-btn" onclick="sendQuickQuestion('What are the admission requirements?')">Admission Requirements</button>
+                    <button class="faq-btn" onclick="sendQuickQuestion('What courses are available?')">Available Courses</button>
+                    <button class="faq-btn" onclick="sendQuickQuestion('What is the fee structure?')">Fee Structure</button>
+                    <button class="faq-btn" onclick="sendQuickQuestion('What are library timings?')">Library Timings</button>
+                    <button class="faq-btn" onclick="sendQuickQuestion('Tell me about hostel facilities')">Hostel Facilities</button>
+                    <button class="faq-btn" onclick="sendQuickQuestion('What is the placement record?')">Placement Record</button>
+                    <button class="faq-btn" onclick="sendQuickQuestion('Where is the nearest hospital?')">Nearest Hospital</button>
+                    <button class="faq-btn" onclick="sendQuickQuestion('What scholarships are available?')">Scholarships</button>
+                </div>
+            </div>
+
+            <div class="chatbot-window">
+                <div class="chat-header">
+                    <div class="chat-header-left">
+                        <div class="bot-avatar"><i class="fas fa-robot"></i></div>
+                        <div class="bot-info">
+                            <h4>SmartFAQBot</h4>
+                            <p><span class="status-dot"></span> Online — Intelligent Assistant</p>
+                        </div>
+                    </div>
+                    <div class="chat-header-actions">
+                        <button onclick="clearChat()" title="Clear Chat"><i class="fas fa-trash"></i></button>
+                        <button onclick="exportChat()" title="Export Chat"><i class="fas fa-download"></i></button>
+                    </div>
+                </div>
+
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message-date-divider"><span>Today</span></div>
+                    <div class="message bot-message">
+                        <div class="bot-avatar-msg"><i class="fas fa-robot"></i></div>
+                        <div class="message-content">
+                            <div class="message-bubble">
+                                👋 Hello! I'm <strong>SmartFAQBot</strong>, your intelligent campus assistant. I can help you with:<br><br>
+                                🎓 College admissions &amp; courses<br>
+                                📚 Library, hostel &amp; campus info<br>
+                                💼 Placement &amp; scholarships<br>
+                                🏥 Local services &amp; area info<br><br>
+                                What would you like to know today?
+                            </div>
+                            <span class="message-time" id="welcomeTime"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="typing-indicator" id="typingIndicator" style="display:none;">
+                    <div class="bot-avatar-msg"><i class="fas fa-robot"></i></div>
+                    <div class="typing-dots"><span></span><span></span><span></span></div>
+                </div>
+
+                <div class="chat-input-area">
+                    <div class="feedback-bar" id="feedbackBar" style="display:none;">
+                        <span>Was this helpful?</span>
+                        <button onclick="rateFeedback(true)"><i class="fas fa-thumbs-up"></i> Yes</button>
+                        <button onclick="rateFeedback(false)"><i class="fas fa-thumbs-down"></i> No</button>
+                        <button onclick="document.getElementById('feedbackBar').style.display='none'"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="input-row">
+                        <input type="text" id="userInput" placeholder="Type your question here..." autocomplete="off">
+                        <button class="send-btn" id="sendBtn" onclick="sendMessage()">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <p class="input-hint"><i class="fas fa-keyboard"></i> Press Enter to send</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT SECTION ===== -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Get in Touch</span>
+            <h2>Contact Us</h2>
+            <p>Have questions or feedback? Reach out to the project team.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info animate-on-scroll">
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-university"></i></div>
+                    <div>
+                        <h4>College</h4>
+                        <p>Kumaun University, Nainital<br>Uttarakhand - 263001</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>info@smartfaqbot.edu.in</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91 98765 43210</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-code-branch"></i></div>
+                    <div>
+                        <h4>Project</h4>
+                        <p>BCA 614: Minor Project<br>Session 2024-25</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form animate-on-scroll" id="contactForm">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" placeholder="Enter subject">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea placeholder="Write your message here..." rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary full-width">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="nav-logo"><i class="fas fa-robot"></i> SmartFAQBot</div>
+                <p>An AI-powered college chatbot system developed as BCA Minor Project at Kumaun University, Nainital.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#chatbot-section">Chatbot</a></li>
+                    <li><a href="admin/admin.html">Admin Panel</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>FAQ Topics</h4>
+                <ul>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Courses &amp; Fees</a></li>
+                    <li><a href="#">Hostel &amp; Library</a></li>
+                    <li><a href="#">Placement</a></li>
+                    <li><a href="#">Local Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-note">Developed for academic purposes.<br>Kumaun University, BCA 2024.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SmartFAQBot — BCA Minor Project. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ===== FLOATING CHATBOT WIDGET ===== -->
+<div class="floating-chat-widget" id="floatingWidget">
+    <div class="floating-chat-box" id="floatingChatBox" style="display:none;">
+        <div class="floating-header">
+            <div class="bot-avatar-sm"><i class="fas fa-robot"></i></div>
+            <div>
+                <h4>SmartFAQBot</h4>
+                <p><span class="online-dot"></span> Online</p>
+            </div>
+            <button onclick="toggleFloatingChat()"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="floating-msgs" id="floatingMsgs">
+            <div class="floating-msg bot">Hi! Got a quick question? Ask me anything! 😊</div>
+        </div>
+        <div class="floating-input-row">
+            <input type="text" id="floatingInput" placeholder="Type here...">
+            <button onclick="sendFloatingMessage()"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <button class="chat-fab" onclick="toggleFloatingChat()" id="chatFab">
+        <i class="fas fa-comments" id="fabIcon"></i>
+        <span class="fab-badge">1</span>
+    </button>
+</div>
+
+<script src="js/chatbot.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
